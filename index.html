@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Trust Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Advertisement Trust Detection</h1>
+        <p>AWS-powered advertisement analysis dashboard</p>
+    </header>
+
+    <main>
+        <section class="summary">
+            <div class="card">
+                <h3>Total Ads</h3>
+                <p id="total">4</p>
+            </div>
+            <div class="card">
+                <h3>Trusted Ads</h3>
+                <p id="trusted">2</p>
+            </div>
+            <div class="card">
+                <h3>Fake Ads</h3>
+                <p id="fake">2</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Advertisement Analysis Results</h2>
+            <button onclick="loadDemo()">Show Demo Results</button>
+            <button onclick="downloadCSV()">Download CSV</button>
+            <p id="message">Showing sample data. Connect your AWS API to load live results.</p>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ad ID</th>
+                            <th>Brand Name</th>
+                            <th>Clicks</th>
+                            <th>Conversions</th>
+                            <th>Reputation</th>
+                            <th>Famous Brand</th>
+                            <th>Ad Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>Final-Year IT Project | AWS Lambda • API Gateway • Amazon S3</footer>
+    <script src="app.js"></script>
+</body>
+</html>
